@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     async function runCommand(command) {
         appendToOutput(`<div>C:\\Users\\ClassicCMD> ${command}</div>`);
         try {
-            const response = await fetch('http://localhost:3000/run-command', {
+            const response = await fetch('https://classiccmd.onrender.com/run-command', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ command })
