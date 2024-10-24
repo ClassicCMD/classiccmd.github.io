@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassicCMD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">
+            <span class="header-title">ClassicCMD</span>
+            <label for="file-upload" class="upload-button">+</label>
+            <input type="file" id="file-upload" accept=".bat,.sh" style="display:none;">
+        </div>
+        <div id="output" class="output"></div>
+        <div class="input-area">
+            <span class="prompt">C:\Users\ClassicCMD></span>
+            <input type="text" id="cmdInput" class="cmd-input" autofocus autocomplete="off" placeholder="Type a command...">
+            <button id="runButton" class="run-button">▶</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
